@@ -18,12 +18,12 @@ map.on('load', () => {
 
     map.addSource('ttcstops', {
         type: 'geojson',
-        data: 'data/ttcstops.geojson'
+        data: 'https://github.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/blob/main/data/ttcstops.geojson'
     });
 
     map.addSource('ttclines', {
         type: 'geojson',
-        data: 'data\ttclines.geojson'
+        data: 'https://github.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/blob/main/data/ttclines.geojson'
     });
 
     map.addLayer({
@@ -52,9 +52,9 @@ map.on('load', () => {
         'source': 'ttclines',
         'paint': {
             'line-color': '#FF0000',
-            'line-width': 1
+            'line-width': 1.5
         }
-    })
+    });
 });
 
 
