@@ -18,21 +18,22 @@ map.on('load', () => {
 
     map.addSource('ttcstops', {
         type: 'geojson',
-        data: 'https://github.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/blob/main/data/ttcstops.geojson'
+        data: 'https://raw.githubusercontent.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/main/data/ttcstops.geojson'
     });
 
     map.addSource('ttclines', {
         type: 'geojson',
-        data: 'https://github.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/blob/main/data/ttclines.geojson'
+        data: 'https://raw.githubusercontent.com/mkbs-mkbs2000/Mapbox-GLJS-Lab2/main/data/ttclines.geojson'
     });
 
+    
     map.addLayer({
-        'id': 'restos',
-        'type': 'symbol',
-        'source': 'restos',
-        'layout': {
-            'icon-image': 'restaurant',
-            'icon-size': 1.5
+        'id': 'lines',
+        'type': 'line',
+        'source': 'ttclines',
+        'paint': {
+            'line-color': '#FF0000',
+            'line-width': 1.5
         }
     });
 
@@ -42,17 +43,18 @@ map.on('load', () => {
         'source': 'ttcstops',
         'layout': {
             'icon-image': 'rail',
-            'icon-size': 1
+            'icon-size': 0.9
         }
     });
 
     map.addLayer({
-        'id': 'lines',
-        'type': 'line',
-        'source': 'ttclines',
-        'paint': {
-            'line-color': '#FF0000',
-            'line-width': 1.5
+        'id': 'restos',
+        'type': 'symbol',
+        'source': 'restos',
+        'layout': {
+            'icon-image': 'restaurant',
+            'icon-size': 2,
+            'icon-allow-overlap': true
         }
     });
 });

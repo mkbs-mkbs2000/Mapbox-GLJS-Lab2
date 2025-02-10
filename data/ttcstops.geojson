@@ -76,7 +76,6 @@
 { "type": "Feature", "properties": { "LOCATION_N": "Sheppard-Yonge", "STATUS": "Existing", "TECHNOLOGY": "Subway", "NAME": "Line 4: Sheppard Subway" }, "geometry": { "type": "Point", "coordinates": [ -79.410923903091998, 43.761521806830537 ] } },
 { "type": "Feature", "properties": { "LOCATION_N": "Spadina", "STATUS": "Existing", "TECHNOLOGY": "Subway", "NAME": "Line 2: Bloor-Danforth Subway" }, "geometry": { "type": "Point", "coordinates": [ -79.403973058014387, 43.667288970818554 ] } },
 { "type": "Feature", "properties": { "LOCATION_N": "St. George", "STATUS": "Existing", "TECHNOLOGY": "Subway", "NAME": "Line 2: Bloor-Danforth Subway" }, "geometry": { "type": "Point", "coordinates": [ -79.399307859293998, 43.668283547722076 ] } },
-{ "type": "Feature", "properties": { "LOCATION_N": "Bloor-Yonge", "STATUS": "Existing", "TECHNOLOGY": "Subway", "NAME": "Line 2: Bloor-Danforth Subway" }, "geometry": { "type": "Point", "coordinates": [ -79.385721340465992, 43.671003938058213 ] } },
-{ "type": "Feature", "properties": { "LOCATION_N": "Union", "STATUS": "Existing", "TECHNOLOGY": "GO Rail", "NAME": "ALL" }, "geometry": { "type": "Point", "coordinates": [ -79.378656955982706, 43.644952304674682 ] } }
+{ "type": "Feature", "properties": { "LOCATION_N": "Bloor-Yonge", "STATUS": "Existing", "TECHNOLOGY": "Subway", "NAME": "Line 2: Bloor-Danforth Subway" }, "geometry": { "type": "Point", "coordinates": [ -79.385721340465992, 43.671003938058213 ] } }
 ]
 }
